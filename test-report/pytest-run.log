@@ -1,0 +1,28 @@
+........................................................................ [ 72%]
+...........................                                              [100%]
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.11.2-final-0 ________________
+
+Name                                               Stmts   Miss  Cover   Missing
+--------------------------------------------------------------------------------
+src/hmcforge/__init__.py                              13      0   100%
+src/hmcforge/adapters.py                              59     12    80%   137-145, 151-166
+src/hmcforge/cli.py                                   30      1    97%   56
+src/hmcforge/core/__init__.py                          2      0   100%
+src/hmcforge/core/types.py                           126      1    99%   213
+src/hmcforge/framework.py                             98      0   100%
+src/hmcforge/mediators/__init__.py                    93      1    99%   193
+src/hmcforge/metaknowledge.py                         53      1    98%   87
+src/hmcforge/observability.py                         86      2    98%   160-161
+src/hmcforge/performance/__init__.py                  68      1    99%   150
+src/hmcforge/policies.py                             113      0   100%
+src/hmcforge/runner.py                                42      0   100%
+src/hmcforge/scenarios/__init__.py                     2      0   100%
+src/hmcforge/scenarios/code_review.py                 18      0   100%
+src/hmcforge/scenarios/financial_underwriting.py      14      0   100%
+src/hmcforge/scenarios/healthcare_triage.py           22      0   100%
+src/hmcforge/seci.py                                  83      0   100%
+--------------------------------------------------------------------------------
+TOTAL                                                922     19    98%
+Coverage JSON written to file test-report/coverage.json
+99 passed in 1.11s

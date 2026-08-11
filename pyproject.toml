@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "hmcforge"
+name = "aicrusaders"
 version = "0.1.0"
 description = "Scaffold for designing, running and evaluating Human-Machine Collaboration frameworks driven by dynamic power handover."
 readme = "README.md"
@@ -29,9 +29,9 @@ llm = ["openai>=1.0"]
 dev = ["pytest>=7.0", "pytest-cov>=4.0"]
 
 [project.urls]
-Homepage = "https://github.com/hmcforge/hmcforge"
-Documentation = "https://github.com/hmcforge/hmcforge/blob/main/docs/index.md"
-Repository = "https://github.com/hmcforge/hmcforge"
+Homepage = "https://github.com/NoahIsARider/Crusaders"
+Documentation = "https://github.com/NoahIsARider/Crusaders/blob/master/docs/index.md"
+Repository = "https://github.com/NoahIsARider/Crusaders"
 
 [project.scripts]
 hmcforge-demo = "hmcforge.cli:main"

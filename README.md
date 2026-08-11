@@ -71,7 +71,7 @@ tape and a workshop for your collaboration design.
 ## Quick start
 
 ```bash
-pip install hmcforge
+pip install aicrusaders
 ```
 
 Run a full scenario end-to-end:

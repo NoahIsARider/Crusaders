@@ -34,9 +34,11 @@ how much they limit the project:
 5. **Naming friction.** Repo `Crusaders` / PyPI package `aicrusaders` /
    import `crusaders`. Three names for one thing hurts discoverability. A
    consolidation pass is wanted (but needs care: PyPI name is taken).
-6. **Young engineering surface.** No CI, no coverage tracking, one author,
-   no adoption signals yet. The code is clean and typed and 99 tests pass —
-   but the safety net needs widening, not replacing.
+6. **Young engineering surface.** One author, no adoption signals yet. The
+   committed test report shows ~98% coverage across 99 passing tests, but the
+   GitHub Action in this repo only publishes tagged releases — there is **no
+   automated CI** running tests on push and no enforced coverage gate. The
+   safety net needs widening, not replacing.
 
 ---
 

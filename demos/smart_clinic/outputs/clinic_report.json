@@ -1,0 +1,218 @@
+{
+  "framework": "smart-clinic-adaptive",
+  "metadata": {
+    "seed": 7,
+    "type": "tasks"
+  },
+  "n_runs": 11,
+  "aggregated": {
+    "fatigue": 0.020081232653209,
+    "cognitive_load": 0.13550297833651515,
+    "decision_time": 2.6458403153496457,
+    "handover_accuracy": 0.9696969696969696,
+    "ai_autonomy": 0.7393939393939392,
+    "quality": 1.0,
+    "efficiency": 0.9530505671701909,
+    "safety": 1.0
+  },
+  "runs": [
+    {
+      "task": "p-01",
+      "elapsed": 6.780000000000001,
+      "successful": true,
+      "n_handovers": 0,
+      "mediators": {
+        "fatigue": 0.0,
+        "cognitive_load": 0.0,
+        "decision_time": 1.356,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 1.0
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9999999999999999,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-02",
+      "elapsed": 6.9,
+      "successful": true,
+      "n_handovers": 0,
+      "mediators": {
+        "fatigue": 0.0,
+        "cognitive_load": 0.0,
+        "decision_time": 1.3800000000000001,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 1.0
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 1.0,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-03",
+      "elapsed": 7.020000000000001,
+      "successful": true,
+      "n_handovers": 0,
+      "mediators": {
+        "fatigue": 0.0,
+        "cognitive_load": 0.0,
+        "decision_time": 1.4040000000000001,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 1.0
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9999999999999999,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-04",
+      "elapsed": 12.58,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.003149999999999999,
+        "cognitive_load": 0.05249999999999999,
+        "decision_time": 2.316,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.8
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9205087440381559,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-05",
+      "elapsed": 17.96788,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.014977157999999996,
+        "cognitive_load": 0.1857793,
+        "decision_time": 3.3935760000000004,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.6
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9443451314234067,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-06",
+      "elapsed": 17.0578,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.012487229999999997,
+        "cognitive_load": 0.15772049999999999,
+        "decision_time": 3.21156,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.6
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9413757928924011,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-07",
+      "elapsed": 17.421832,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.0134832012,
+        "cognitive_load": 0.16894402,
+        "decision_time": 3.2843663999999997,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.6
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9426007551903841,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-08",
+      "elapsed": 17.785864,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.014479172399999995,
+        "cognitive_load": 0.18016753999999996,
+        "decision_time": 3.3571728,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.6
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9437755736803115,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-09",
+      "elapsed": 12.58,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.003149999999999999,
+        "cognitive_load": 0.05249999999999999,
+        "decision_time": 2.316,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.8
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9205087440381559,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-10",
+      "elapsed": 12.52,
+      "successful": true,
+      "n_handovers": 1,
+      "mediators": {
+        "fatigue": 0.003149999999999999,
+        "cognitive_load": 0.05249999999999999,
+        "decision_time": 2.304,
+        "handover_accuracy": 1.0,
+        "ai_autonomy": 0.8
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9201277955271565,
+        "safety": 1.0
+      }
+    },
+    {
+      "task": "p-11",
+      "elapsed": 60.37881922615327,
+      "successful": true,
+      "n_handovers": 3,
+      "mediators": {
+        "fatigue": 0.15601679758529904,
+        "cognitive_load": 0.6404214017016666,
+        "decision_time": 4.781568268846105,
+        "handover_accuracy": 0.6666666666666667,
+        "ai_autonomy": 0.3333333333333333
+      },
+      "performance": {
+        "quality": 1.0,
+        "efficiency": 0.9503137020821277,
+        "safety": 1.0
+      }
+    }
+  ]
+}

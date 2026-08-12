@@ -1,4 +1,4 @@
-"""Shared domain types for HMCForge.
+"""Shared domain types for Crusaders.
 
 The vocabulary here mirrors the organisational-level theory the platform is
 built around:

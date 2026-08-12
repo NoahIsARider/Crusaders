@@ -9,7 +9,7 @@ description = "Scaffold for designing, running and evaluating Human-Machine Coll
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
-authors = [{ name = "HMCForge contributors" }]
+authors = [{ name = "NoahIsARider" }]
 keywords = ["human-machine-collaboration", "handover", "frameworks", "evaluation", "seci", "orchestration"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -34,7 +34,7 @@ Documentation = "https://github.com/NoahIsARider/Crusaders/blob/master/docs/inde
 Repository = "https://github.com/NoahIsARider/Crusaders"
 
 [project.scripts]
-hmcforge-demo = "hmcforge.cli:main"
+crusaders-demo = "crusaders.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

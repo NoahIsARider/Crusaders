@@ -5,10 +5,10 @@ meta-knowledge (the moderator), a task corpus, and a reference framework
 showing one philosophy of dynamic power handover. Use them as templates for
 your own frameworks.
 
-* :mod:`hmcforge.scenarios.healthcare_triage` -- risk-gated, human safety net.
-* :mod:`hmcforge.scenarios.financial_underwriting` -- confidence-driven,
+* :mod:`crusaders.scenarios.healthcare_triage` -- risk-gated, human safety net.
+* :mod:`crusaders.scenarios.financial_underwriting` -- confidence-driven,
   experts own the judgement calls.
-* :mod:`hmcforge.scenarios.code_review` -- efficiency-driven, load-aware.
+* :mod:`crusaders.scenarios.code_review` -- efficiency-driven, load-aware.
 """
 
 from . import code_review, financial_underwriting, healthcare_triage

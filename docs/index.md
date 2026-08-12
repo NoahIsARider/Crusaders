@@ -1,4 +1,4 @@
-# HMCForge
+# Crusaders
 
 **A scaffold for designing, running and evaluating Human-Machine Collaboration
 frameworks driven by dynamic power handover.**
@@ -11,9 +11,9 @@ This is the documentation index. New here? Start with the tutorial.
 - [Built-in scenarios](scenarios.md)
 - [API reference](api.md)
 
-## What HMCForge is
+## What Crusaders is
 
-HMCForge is not a human-machine collaboration framework. It is a **workshop** for
+Crusaders is not a human-machine collaboration framework. It is a **workshop** for
 building them:
 
 - You describe tasks, steps, risk and complexity.
@@ -30,28 +30,28 @@ actors (AI and expert) are protocols you can replace with real systems.
 ## Installation
 
 ```bash
-pip install hmcforge
+pip install aicrusaders
 ```
 
 Optional LLM support:
 
 ```bash
-pip install "hmcforge[llm]"
+pip install "aicrusaders[llm]"
 ```
 
 Development install:
 
 ```bash
-git clone https://github.com/hmcforge/hmcforge.git
-cd hmcforge
+git clone https://github.com/NoahIsARider/Crusaders.git
+cd crusaders
 pip install -e ".[dev]"
 ```
 
 ## 30-second demo
 
 ```python
-from hmcforge import SimulationRunner, SECIEngine
-from hmcforge.scenarios import code_review
+from crusaders import SimulationRunner, SECIEngine
+from crusaders.scenarios import code_review
 
 report = SimulationRunner(code_review.framework(), seed=1).evaluate_tasks(code_review.tasks())
 print(report.to_markdown())
@@ -63,5 +63,5 @@ print(engine.run(report).patch)
 Or run the bundled CLI demo:
 
 ```bash
-hmcforge-demo
+crusaders-demo
 ```

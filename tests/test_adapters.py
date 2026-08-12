@@ -2,10 +2,10 @@
 
 import pytest
 
-from hmcforge import adapters
-from hmcforge.adapters import RuleBasedAI, SimulatedExpert
-from hmcforge.core.types import Role, StepSpec
-from hmcforge.policies import SessionState
+from crusaders import adapters
+from crusaders.adapters import RuleBasedAI, SimulatedExpert
+from crusaders.core.types import Role, StepSpec
+from crusaders.policies import SessionState
 
 
 class TestRuleBasedAI:

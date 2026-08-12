@@ -10,7 +10,7 @@ Every job is a `TaskSpec` made of `StepSpec`s. Each step carries two numbers tha
 drive everything downstream: `complexity` (how hard) and `risk` (how bad if wrong).
 
 ```python
-from hmcforge import StepSpec, TaskSpec
+from crusaders import StepSpec, TaskSpec
 
 def support_task(ticket_id, sensitive):
     return (
@@ -38,7 +38,7 @@ Meta-knowledge is the moderator. It says how much the AI is trusted, how much a
 human can take before tiring, and who owns risk at each level.
 
 ```python
-from hmcforge import OrganizationalMetaknowledge, RiskResponsibility
+from crusaders import OrganizationalMetaknowledge, RiskResponsibility
 
 meta = OrganizationalMetaknowledge(
     ai_boundary={"max_complexity": 0.6, "allowed_domains": ["classify", "draft"]},
@@ -59,8 +59,8 @@ the collaboration behaviour everywhere.
 Two options. Start with composition:
 
 ```python
-from hmcforge import HMCFramework
-from hmcforge.policies import CompositePolicy, ConfidencePolicy, LoadAwarePolicy, RiskGatePolicy
+from crusaders import HMCFramework
+from crusaders.policies import CompositePolicy, ConfidencePolicy, LoadAwarePolicy, RiskGatePolicy
 
 framework = HMCFramework(
     name="ticket-adaptive",
@@ -81,7 +81,7 @@ Or write the rule by hand. Subclassing gives you access to `session` (fatigue,
 cognitive load, step counts) and the raw `step`:
 
 ```python
-from hmcforge import HMCFramework, HandoverDecision, Role
+from crusaders import HMCFramework, HandoverDecision, Role
 
 class TicketFramework(HMCFramework):
     def decide_handover(self, step, session):
@@ -101,7 +101,7 @@ Both are the same thing to the platform: one method answering *who's next*.
 ## 4. Run it and grade it
 
 ```python
-from hmcforge import SimulationRunner
+from crusaders import SimulationRunner
 
 tasks = [support_task("T-1", sensitive=False), support_task("T-2", sensitive=True)]
 report = SimulationRunner(framework, seed=7).evaluate_tasks(tasks)
@@ -121,7 +121,7 @@ report = SimulationRunner(framework, seed=7).evaluate_repeated(support_task("T-2
 ## 5. Improve it with the feedback loop
 
 ```python
-from hmcforge import SECIEngine
+from crusaders import SECIEngine
 
 engine = SECIEngine(meta, learning_rate=0.3)
 update = engine.run(report)
@@ -140,7 +140,7 @@ framework.metaknowledge = meta     # next round is moderated by what happened
 Both actors are protocols. Swap the simulated actors for a live model:
 
 ```python
-from hmcforge import OpenAIAdapter
+from crusaders import OpenAIAdapter
 
 ai = OpenAIAdapter()  # reads USER_LLM_API_KEY, USER_LLM_BASE_URL, USER_LLM_MODEL
 report = SimulationRunner(framework).evaluate_tasks(tasks, ai=ai)

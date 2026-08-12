@@ -2,10 +2,10 @@
 
 import pytest
 
-from hmcforge.mediators import MetricResult
-from hmcforge.metaknowledge import OrganizationalMetaknowledge
-from hmcforge.observability import EvaluationReport, RunResult
-from hmcforge.seci import KnowledgeUpdate, Lesson, SECIEngine
+from crusaders.mediators import MetricResult
+from crusaders.metaknowledge import OrganizationalMetaknowledge
+from crusaders.observability import EvaluationReport, RunResult
+from crusaders.seci import KnowledgeUpdate, Lesson, SECIEngine
 
 
 def report_with(aggregate: dict[str, float], n_runs=3) -> EvaluationReport:

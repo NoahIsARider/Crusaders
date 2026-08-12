@@ -2,8 +2,8 @@
 
 import pytest
 
-from hmcforge import SimulationRunner, SECIEngine
-from hmcforge.scenarios import code_review, financial_underwriting, healthcare_triage
+from crusaders import SimulationRunner, SECIEngine
+from crusaders.scenarios import code_review, financial_underwriting, healthcare_triage
 
 SCENARIOS = [healthcare_triage, code_review, financial_underwriting]
 MODEL_KEYS = {

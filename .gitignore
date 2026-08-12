@@ -13,7 +13,7 @@ htmlcov/
 /coverage.json
 
 # Runtime artifacts
-hmcforge_demo_report.json
+crusaders_demo_report.json
 
 # Editors / OS
 .vscode/

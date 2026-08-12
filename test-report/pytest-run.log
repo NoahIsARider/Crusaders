@@ -5,23 +5,23 @@ _______________ coverage: platform linux, python 3.11.2-final-0 ________________
 
 Name                                               Stmts   Miss  Cover   Missing
 --------------------------------------------------------------------------------
-src/hmcforge/__init__.py                              13      0   100%
-src/hmcforge/adapters.py                              59     12    80%   137-145, 151-166
-src/hmcforge/cli.py                                   30      1    97%   56
-src/hmcforge/core/__init__.py                          2      0   100%
-src/hmcforge/core/types.py                           126      1    99%   213
-src/hmcforge/framework.py                             98      0   100%
-src/hmcforge/mediators/__init__.py                    93      1    99%   193
-src/hmcforge/metaknowledge.py                         53      1    98%   87
-src/hmcforge/observability.py                         86      2    98%   160-161
-src/hmcforge/performance/__init__.py                  68      1    99%   150
-src/hmcforge/policies.py                             113      0   100%
-src/hmcforge/runner.py                                42      0   100%
-src/hmcforge/scenarios/__init__.py                     2      0   100%
-src/hmcforge/scenarios/code_review.py                 18      0   100%
-src/hmcforge/scenarios/financial_underwriting.py      14      0   100%
-src/hmcforge/scenarios/healthcare_triage.py           22      0   100%
-src/hmcforge/seci.py                                  83      0   100%
+src/crusaders/__init__.py                              13      0   100%
+src/crusaders/adapters.py                              59     12    80%   137-145, 151-166
+src/crusaders/cli.py                                   30      1    97%   56
+src/crusaders/core/__init__.py                          2      0   100%
+src/crusaders/core/types.py                           126      1    99%   213
+src/crusaders/framework.py                             98      0   100%
+src/crusaders/mediators/__init__.py                    93      1    99%   193
+src/crusaders/metaknowledge.py                         53      1    98%   87
+src/crusaders/observability.py                         86      2    98%   160-161
+src/crusaders/performance/__init__.py                  68      1    99%   150
+src/crusaders/policies.py                             113      0   100%
+src/crusaders/runner.py                                42      0   100%
+src/crusaders/scenarios/__init__.py                     2      0   100%
+src/crusaders/scenarios/code_review.py                 18      0   100%
+src/crusaders/scenarios/financial_underwriting.py      14      0   100%
+src/crusaders/scenarios/healthcare_triage.py           22      0   100%
+src/crusaders/seci.py                                  83      0   100%
 --------------------------------------------------------------------------------
 TOTAL                                                922     19    98%
 Coverage JSON written to file test-report/coverage.json

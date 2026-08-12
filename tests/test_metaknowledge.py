@@ -2,7 +2,7 @@
 
 import pytest
 
-from hmcforge.metaknowledge import OrganizationalMetaknowledge, RiskResponsibility
+from crusaders.metaknowledge import OrganizationalMetaknowledge, RiskResponsibility
 
 
 class TestRiskResponsibility:

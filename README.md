@@ -2,7 +2,7 @@
 
 **Design, run and evaluate Human-Machine Collaboration frameworks — without fighting your infra.**
 
-Crusaders (AKA HMCForge) is a Python scaffold for teams that build, measure and iteratively improve
+Crusaders is a Python scaffold for teams that build, measure and iteratively improve
 *who does what* between AI systems and human experts. It turns the abstract idea of
 "human-machine collaboration" into something you can prototype in an afternoon, run
 through a simulation, grade on real metrics, and evolve — all while staying true to
@@ -20,7 +20,7 @@ the hard part. The hard part is *deciding who is in control at every step*, know
 whether that decision was a good one, and turning the evidence into a better policy
 next week.
 
-HMCForge answers three questions explicitly:
+Crusaders answers three questions explicitly:
 
 1. **Who controls each step?** You define the handover logic (policies or a custom
    subclass). We run the choreography.
@@ -56,8 +56,8 @@ pip install aicrusaders
 Run a full scenario end-to-end:
 
 ```python
-from hmcforge import SimulationRunner, SECIEngine
-from hmcforge.scenarios import healthcare_triage
+from crusaders import SimulationRunner, SECIEngine
+from crusaders.scenarios import healthcare_triage
 
 report = SimulationRunner(healthcare_triage.framework(), seed=3).evaluate_tasks(
     healthcare_triage.tasks()
@@ -72,7 +72,7 @@ print("new AI boundary:", updated.ai_boundary)
 Or grab a ready-made demo with the CLI:
 
 ```bash
-hmcforge-demo
+crusaders-demo
 ```
 
 ## Design your own framework in 4 moves
@@ -80,7 +80,7 @@ hmcforge-demo
 ### 1. Describe the work
 
 ```python
-from hmcforge import StepSpec, TaskSpec
+from crusaders import StepSpec, TaskSpec
 
 task = (
     TaskSpec("loan-1", "Auto loan underwriting")
@@ -94,8 +94,8 @@ task = (
 The fastest path: compose built-in policies into a plain `HMCFramework`:
 
 ```python
-from hmcforge import HMCFramework
-from hmcforge.policies import CompositePolicy, ConfidencePolicy, RiskGatePolicy
+from crusaders import HMCFramework
+from crusaders.policies import CompositePolicy, ConfidencePolicy, RiskGatePolicy
 
 framework = HMCFramework(
     name="my-review-framework",
@@ -111,7 +111,7 @@ framework = HMCFramework(
 The most expressive path: subclass and write the handover rule yourself.
 
 ```python
-from hmcforge import HMCFramework, HandoverDecision, Role
+from crusaders import HMCFramework, HandoverDecision, Role
 
 class MyFramework(HMCFramework):
     def decide_handover(self, step, session):
@@ -147,7 +147,7 @@ Three opinionated, runnable case studies — start from any of them.
 | `code_review` | Efficiency-driven, load-aware | AI-first, engineers join for critical files |
 
 ```bash
-python -c "from hmcforge.scenarios import code_review; print(code_review.framework().name)"
+python -c "from crusaders.scenarios import code_review; print(code_review.framework().name)"
 ```
 
 ## Plug in a real LLM (or a real human)
@@ -155,7 +155,7 @@ python -c "from hmcforge.scenarios import code_review; print(code_review.framewo
 Both sides of the handover are protocols. Swap the rule-based actors for anything:
 
 ```python
-from hmcforge import OpenAIAdapter
+from crusaders import OpenAIAdapter
 
 ai = OpenAIAdapter()  # reads USER_LLM_API_KEY / USER_LLM_BASE_URL / USER_LLM_MODEL
 report = SimulationRunner(framework).evaluate_tasks(tasks, ai=ai)
@@ -182,8 +182,8 @@ details and the notation.
 ## Development
 
 ```bash
-git clone https://github.com/hmcforge/hmcforge.git
-cd hmcforge
+git clone https://github.com/NoahIsARider/Crusaders.git
+cd crusaders
 pip install -e ".[dev]"
 pytest
 ```

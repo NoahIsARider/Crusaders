@@ -9,8 +9,8 @@ you can treat them as templates:
 - `DOMAIN` — the scenario name.
 
 ```python
-from hmcforge import SimulationRunner
-from hmcforge.scenarios import financial_underwriting
+from crusaders import SimulationRunner
+from crusaders.scenarios import financial_underwriting
 
 report = SimulationRunner(financial_underwriting.framework(), seed=3).evaluate_tasks(
     financial_underwriting.tasks()
@@ -57,10 +57,10 @@ through handover accuracy and fatigue, which is exactly what the model predicts
 should move first:
 
 ```python
-from hmcforge import HMCFramework
-from hmcforge.policies import AlwaysAI, AlwaysExpert
-from hmcforge.scenarios import code_review
-from hmcforge import SimulationRunner
+from crusaders import HMCFramework
+from crusaders.policies import AlwaysAI, AlwaysExpert
+from crusaders.scenarios import code_review
+from crusaders import SimulationRunner
 
 for name, policies in [("ai-only", [AlwaysAI()]), ("expert-only", [AlwaysExpert()])]:
     fw = HMCFramework(name=name, metaknowledge=code_review.default_metaknowledge(), policies=policies)

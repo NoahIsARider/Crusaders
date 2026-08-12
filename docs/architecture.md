@@ -1,13 +1,13 @@
 # Architecture
 
-HMCForge is a small core with open seams. Everything a framework author touches is
+Crusaders is a small core with open seams. Everything a framework author touches is
 a protocol or a thin base class; the platform supplies choreography, measurement
 and reporting.
 
 ## Package layout
 
 ```
-src/hmcforge/
+src/crusaders/
   core/types.py        Task, Step, roles, handover events, outcomes, snapshots
   framework.py         HMCFramework base + HandoverDecision
   policies.py          HandoverPolicy + built-in policies + SessionState

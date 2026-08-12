@@ -5,7 +5,7 @@ This is the complete public surface. Everything else is internal.
 ## Top-level imports
 
 ```python
-from hmcforge import (
+from crusaders import (
     HMCFramework, HandoverDecision, Role,
     OrganizationalMetaknowledge, RiskResponsibility,
     SimulationRunner, SECIEngine, KnowledgeUpdate,
@@ -111,7 +111,7 @@ Quality drops as `session.fatigue` grows. Good for modelling humans.
 
 ### `OpenAIAdapter(api_key=None, base_url=None, model=None, ...)`
 LLM-backed AI reading `USER_LLM_API_KEY` / `USER_LLM_BASE_URL` /
-`USER_LLM_MODEL` from the environment. Requires `pip install "hmcforge[llm]"`.
+`USER_LLM_MODEL` from the environment. Requires `pip install "aicrusaders[llm]"`.
 
 ### `AIModel` / `Expert` protocols
 One method each: `act(step, session) -> AgentDecision`. Implement either to plug in
@@ -135,7 +135,7 @@ Both produce `MetricResult(key, value, label, higher_is_better, detail, series)`
 
 ### Custom metric
 ```python
-from hmcforge import MediatorBase, MetricResult
+from crusaders import MediatorBase, MetricResult
 
 class TrustMediator(MediatorBase):
     key = "trust"

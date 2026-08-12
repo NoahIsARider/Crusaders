@@ -2,17 +2,17 @@
 
 import pytest
 
-from hmcforge.core.types import Role, StepSpec, TaskSpec
-from hmcforge.framework import HMCFramework
-from hmcforge.metaknowledge import OrganizationalMetaknowledge, RiskResponsibility
-from hmcforge.mediators import (
+from crusaders.core.types import Role, StepSpec, TaskSpec
+from crusaders.framework import HMCFramework
+from crusaders.metaknowledge import OrganizationalMetaknowledge, RiskResponsibility
+from crusaders.mediators import (
     CognitiveLoadMediator,
     DecisionTimeMediator,
     FatigueMediator,
     HandoverAccuracyMediator,
     MediatorRegistry,
 )
-from hmcforge.policies import AlwaysExpert
+from crusaders.policies import AlwaysExpert
 
 
 def expert_framework_task():

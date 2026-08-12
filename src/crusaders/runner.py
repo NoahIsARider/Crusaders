@@ -2,7 +2,7 @@
 
 Runs one framework against a set of tasks (or the same task many times),
 evaluates every run with the configured mediators and performance metrics, and
-aggregates everything into an :class:`~hmcforge.observability.EvaluationReport`.
+aggregates everything into an :class:`~crusaders.observability.EvaluationReport`.
 """
 
 from __future__ import annotations

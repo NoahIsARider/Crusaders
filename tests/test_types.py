@@ -2,7 +2,7 @@
 
 import pytest
 
-from hmcforge.core.types import (
+from crusaders.core.types import (
     HandoverEvent,
     HandoverState,
     Role,

@@ -1,10 +1,10 @@
 """Command-line entry point: run a quick demo end-to-end.
 
-    hmcforge-demo
+    crusaders-demo
 
 Runs a small built-in scenario through the built-in adaptive framework,
 prints an evaluation report and a sample of the SECI feedback, and writes the
-JSON report to ``hmcforge_demo_report.json`` in the current directory.
+JSON report to ``crusaders_demo_report.json`` in the current directory.
 """
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ def main(argv: list[str] | None = None) -> int:
     from .policies import CompositePolicy, ConfidencePolicy, LoadAwarePolicy, RiskGatePolicy
     from .scenarios import healthcare_triage as triage
 
-    print("HMCForge demo")
+    print("Crusaders demo")
     print("=" * 40)
     print()
 
@@ -46,9 +46,9 @@ def main(argv: list[str] | None = None) -> int:
     print(f"patch: {update.patch}")
     print(f"recommendations: {update.recommendations}")
 
-    report.to_json("hmcforge_demo_report.json")
+    report.to_json("crusaders_demo_report.json")
     print()
-    print("Report written to hmcforge_demo_report.json")
+    print("Report written to crusaders_demo_report.json")
     return 0
 
 

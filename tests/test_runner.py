@@ -4,11 +4,11 @@ import json
 
 import pytest
 
-from hmcforge.core.types import StepSpec, TaskSpec
-from hmcforge.framework import HMCFramework
-from hmcforge.observability import EvaluationReport, TraceRecorder
-from hmcforge.policies import AlwaysAI, AlwaysExpert, RiskGatePolicy
-from hmcforge.runner import SimulationRunner
+from crusaders.core.types import StepSpec, TaskSpec
+from crusaders.framework import HMCFramework
+from crusaders.observability import EvaluationReport, TraceRecorder
+from crusaders.policies import AlwaysAI, AlwaysExpert, RiskGatePolicy
+from crusaders.runner import SimulationRunner
 
 
 def task(n=3):
@@ -53,8 +53,8 @@ class TestRunner:
         assert r1.aggregated() == r2.aggregated()
 
     def test_custom_mediator_and_metric(self):
-        from hmcforge.mediators import MediatorBase, MetricResult
-        from hmcforge.performance import PerformanceMetric
+        from crusaders.mediators import MediatorBase, MetricResult
+        from crusaders.performance import PerformanceMetric
 
         class MyMediator(MediatorBase):
             key = "trust"

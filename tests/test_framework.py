@@ -2,11 +2,11 @@
 
 import pytest
 
-from hmcforge.adapters import RuleBasedAI, SimulatedExpert
-from hmcforge.core.types import HandoverDirection, Role, StepSpec, TaskSpec
-from hmcforge.framework import HMCFramework, HandoverDecision
-from hmcforge.metaknowledge import OrganizationalMetaknowledge
-from hmcforge.policies import HandoverPolicy, PolicyDecision, RiskGatePolicy, SessionState
+from crusaders.adapters import RuleBasedAI, SimulatedExpert
+from crusaders.core.types import HandoverDirection, Role, StepSpec, TaskSpec
+from crusaders.framework import HMCFramework, HandoverDecision
+from crusaders.metaknowledge import OrganizationalMetaknowledge
+from crusaders.policies import HandoverPolicy, PolicyDecision, RiskGatePolicy, SessionState
 
 
 def simple_task(n=3):

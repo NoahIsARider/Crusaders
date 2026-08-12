@@ -2,11 +2,11 @@
 
 import pytest
 
-from hmcforge.core.types import Role, StepSpec, TaskSpec
-from hmcforge.framework import HMCFramework
-from hmcforge.metaknowledge import OrganizationalMetaknowledge, RiskResponsibility
-from hmcforge.performance import EfficiencyMetric, MetricSet, QualityMetric, SafetyMetric
-from hmcforge.policies import AlwaysAI, AlwaysExpert
+from crusaders.core.types import Role, StepSpec, TaskSpec
+from crusaders.framework import HMCFramework
+from crusaders.metaknowledge import OrganizationalMetaknowledge, RiskResponsibility
+from crusaders.performance import EfficiencyMetric, MetricSet, QualityMetric, SafetyMetric
+from crusaders.policies import AlwaysAI, AlwaysExpert
 
 
 def run_with(controller_policy, steps):

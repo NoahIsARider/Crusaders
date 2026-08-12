@@ -2,9 +2,9 @@
 
 import pytest
 
-from hmcforge.core.types import Role, StepContext, StepSpec, TaskSpec
-from hmcforge.metaknowledge import OrganizationalMetaknowledge
-from hmcforge.policies import (
+from crusaders.core.types import Role, StepContext, StepSpec, TaskSpec
+from crusaders.metaknowledge import OrganizationalMetaknowledge
+from crusaders.policies import (
     AlwaysAI,
     AlwaysExpert,
     CompositePolicy,

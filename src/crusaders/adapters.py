@@ -8,7 +8,7 @@ A framework choreographs *who* works on each step; the actors do the work.
 * a Python object that calls your own internal model,
 * a thin client that shows a task to a human operator and waits for input.
 
-Both protocols receive the :class:`~hmcforge.policies.SessionState` so that
+Both protocols receive the :class:`~crusaders.policies.SessionState` so that
 load-aware implementations are possible.
 """
 
@@ -114,7 +114,7 @@ class OpenAIAdapter:
     Reads configuration from the *project's own* environment variables
     (``USER_LLM_API_KEY`` / ``USER_LLM_BASE_URL`` / ``USER_LLM_MODEL``) so no
     secrets are baked into code. The ``openai`` package must be installed
-    (``pip install hmcforge[llm]``); if it is missing, a helpful error is
+    (``pip install aicrusaders[llm]``); if it is missing, a helpful error is
     raised at construction time.
     """
 
@@ -131,7 +131,7 @@ class OpenAIAdapter:
         except ImportError as exc:  # pragma: no cover - depends on env
             raise ImportError(
                 "OpenAIAdapter requires the 'openai' package. "
-                "Install it with: pip install 'hmcforge[llm]'"
+                "Install it with: pip install 'aicrusaders[llm]'"
             ) from exc
 
         self._client = OpenAI(

@@ -2,7 +2,7 @@
 
 Quality, efficiency and safety. Like mediators, these are open -- subclass
 :class:`PerformanceMetric` and register it in a
-:class:`~hmcforge.performance.MetricSet`.
+:class:`~crusaders.performance.MetricSet`.
 """
 
 from __future__ import annotations

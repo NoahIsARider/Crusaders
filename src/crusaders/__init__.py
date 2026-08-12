@@ -1,9 +1,9 @@
-"""HMCForge - a scaffold for designing, running and evaluating
+"""Crusaders - a scaffold for designing, running and evaluating
 Human-Machine Collaboration frameworks driven by dynamic power handover.
 
 Quick start::
 
-    from hmcforge import HMCFramework, TaskSpec, StepSpec, SimulationRunner
+    from crusaders import HMCFramework, TaskSpec, StepSpec, SimulationRunner
 
     class MyFramework(HMCFramework):
         def decide_handover(self, step, session):

@@ -1,6 +1,6 @@
 # The model behind the platform
 
-HMCForge operationalises a specific, evidence-shaped view of how human-machine
+Crusaders operationalises a specific, evidence-shaped view of how human-machine
 collaboration affects organisational performance. That model is the reason the
 API looks the way it does. Understand it once, and the library becomes obvious.
 
@@ -20,7 +20,7 @@ flowchart LR
     E -->|"updates"| A
 ```
 
-| Position | In HMCForge | Meaning |
+| Position | In Crusaders | Meaning |
 |---|---|---|
 | Moderator | `OrganizationalMetaknowledge` | The organisation's understanding of AI boundaries, expert capability, risk responsibility and handover timing. Shapes how the framework is tuned. |
 | Independent variable | `HMCFramework` | The collaboration framework, concretely realised as *AI-Expert dynamic power handover*. |
@@ -60,7 +60,7 @@ collaboration culture. That is the moderation effect, made executable.
 
 ## The SECI feedback loop
 
-SECI is Nonaka's model of organisational knowledge creation. HMCForge maps it to
+SECI is Nonaka's model of organisational knowledge creation. Crusaders maps it to
 pipeline stages:
 
 | Stage | What the engine does |

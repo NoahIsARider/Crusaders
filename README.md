@@ -150,6 +150,20 @@ Three opinionated, runnable case studies — start from any of them.
 python -c "from crusaders.scenarios import code_review; print(code_review.framework().name)"
 ```
 
+## Demos
+
+Longer, end-to-end case studies built on the framework — run them, read the
+reports, then re-calibrate and watch the handover policy adapt.
+
+| Demo | Question it answers |
+|---|---|
+| [`demos/smart_clinic/`](demos/smart_clinic/) | When does an AI front-desk diagnose on its own, and when does the doctor take over? A community clinic with an 11-patient roster, a 5-rule handover policy, a SECI learning loop and a 4-framework comparison. |
+
+```bash
+cd demos/smart_clinic
+python run_demo.py
+```
+
 ## Plug in a real LLM (or a real human)
 
 Both sides of the handover are protocols. Swap the rule-based actors for anything:

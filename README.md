@@ -11,14 +11,6 @@ one simple mechanism: **dynamic power handover**.
 <img width="1536" height="1024" alt="ChatGPT Image Aug 12, 2026, 11_18_58 AM" src="https://github.com/user-attachments/assets/7826e010-9e9e-47f7-854e-3850f4558be6" />
 
 
-```
-Read the docs
-  docs/index.md       the model behind the platform
-  docs/tutorial.md    build your first framework in 10 minutes
-  docs/scenarios.md   three ready-to-run case studies
-  docs/api.md         API reference
-```
-
 ---
 
 ## Why another framework?

@@ -1,12 +1,15 @@
-# HMCForge
+# CRUSADERS: A Dynamic Human-Machine Collaboration Framework
 
 **Design, run and evaluate Human-Machine Collaboration frameworks — without fighting your infra.**
 
-HMCForge is a Python scaffold for teams that build, measure and iteratively improve
+Crusaders (AKA HMCForge) is a Python scaffold for teams that build, measure and iteratively improve
 *who does what* between AI systems and human experts. It turns the abstract idea of
 "human-machine collaboration" into something you can prototype in an afternoon, run
 through a simulation, grade on real metrics, and evolve — all while staying true to
 one simple mechanism: **dynamic power handover**.
+
+<img width="1536" height="1024" alt="ChatGPT Image Aug 12, 2026, 11_18_58 AM" src="https://github.com/user-attachments/assets/7826e010-9e9e-47f7-854e-3850f4558be6" />
+
 
 ```
 Read the docs

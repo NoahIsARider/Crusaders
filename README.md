@@ -34,6 +34,47 @@ Crusaders answers three questions explicitly:
 It is not a workflow engine, not a chatbot SDK, and not a lock-in. It is a measuring
 tape and a workshop for your collaboration design.
 
+## The management science behind it
+
+Crusaders is not an arbitrary design — it operationalises a specific, evidence-
+shaped view of human-machine collaboration that comes from three research
+lineages:
+
+**1. Learning to Defer (ML / decision science).** "When should the AI decide,
+and when should it hand over to a human?" is the central question of
+human-AI decision-making. The learning-to-defer literature (Chow 1970;
+Madras et al. 2018; Mozannar & Sontag 2020) formalises it as an optimisation
+problem — and its own authors name three unsolved gaps in real deployment:
+*capacity management* (humans are a finite, expensive resource),
+*dynamic environments* (a good handover policy drifts as conditions change),
+and *the cost of human predictions* (you cannot trial-run every decision past
+a clinician). Crusaders is built around exactly those three gaps: session
+budgets and fatigue ceilings for the first, an evolving meta-knowledge for the
+second, and a deterministic simulator for the third.
+
+**2. Adaptive automation / function allocation (human factors, 40+ years).**
+Sheridan & Verplank's levels of automation (1978) and Parasuraman's adaptive
+function allocation (1993) established that *static* automation breeds
+complacency and out-of-the-loop degradation, while *dynamic* allocation that
+responds to workload and risk keeps the human sharp. Kaber & Endsley (2004)
+confirmed the performance cost of getting the allocation wrong. Crusaders makes
+that 40-year-old finding executable in the LLM era: handover is a first-class
+policy object, not an afterthought interrupt.
+
+**3. Organisational knowledge creation (management).** The SECI loop is
+Nonaka's model of how organisations learn — socialise, externalise, combine,
+internalise. In Crusaders it is the feedback path that converts observed
+performance into updated meta-knowledge (AI boundary, expert session limits,
+handover cost budget) for the next round. The same code bound to different
+meta-knowledge behaves like a different collaboration culture: organisational
+AI-governance policy becomes something you can simulate, diff and version.
+
+**Why this matters.** Most "human-in-the-loop" tooling treats the human as a
+stop button. Crusaders treats the human as a measured resource and the handover
+policy as a tunable instrument: two frameworks can reach the same quality while
+one quietly burns out the humans. That difference is the whole point of the
+project — and it is the difference organisations actually feel.
+
 ## What's inside
 
 | Layer | Pieces | You control |
@@ -203,6 +244,9 @@ pytest
 ```
 
 Everything is deterministic given a seed, so your experiments are reproducible.
+
+We are actively looking for collaborators — known limitations, the roadmap and
+how to contribute live in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Roadmap
 

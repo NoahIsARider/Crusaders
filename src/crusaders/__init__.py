@@ -65,7 +65,7 @@ from .policies import (
 from .runner import SimulationRunner
 from .seci import KnowledgeUpdate, Lesson, SECIEngine
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = [
     "AIModel",
@@ -119,3 +119,4 @@ __all__ = [
     "TraceRecorder",
     "__version__",
 ]
+

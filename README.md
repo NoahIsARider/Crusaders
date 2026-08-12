@@ -8,22 +8,6 @@ HMCForge is a Python scaffold for teams that build, measure and iteratively impr
 through a simulation, grade on real metrics, and evolve — all while staying true to
 one simple mechanism: **dynamic power handover**.
 
-```mermaid
-flowchart LR
-    MK["Organisation Meta-knowledge"]
-    FR["Collaboration Framework"]
-    HO["Dynamic Power Handover"]
-    MD["Mediators"]
-    DV["Performance"]
-    SE["SECI Feedback"]
-    MK -->|"Moderates"| FR
-    FR --> HO
-    HO --> MD
-    MD --> DV
-    DV --> SE
-    SE --> MK
-```
-
 ```
 Read the docs
   docs/index.md       the model behind the platform

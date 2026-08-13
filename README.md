@@ -8,7 +8,8 @@ Crusaders is a Python scaffold for teams that build, measure and iteratively imp
 through a simulation, grade on real metrics, and evolve — all while staying true to
 one simple mechanism: **dynamic power handover**.
 
-<img width="1536" height="1024" alt="ChatGPT Image Aug 12, 2026, 11_18_58 AM" src="https://github.com/user-attachments/assets/7826e010-9e9e-47f7-854e-3850f4558be6" />
+<img width="1024" height="682" alt="image" src="https://github.com/user-attachments/assets/699aa044-b70a-4dfa-aebc-a6c878ac372e" />
+
 
 
 ---

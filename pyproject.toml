@@ -26,6 +26,7 @@ dependencies = []
 
 [project.optional-dependencies]
 llm = ["openai>=1.0"]
+gui = ["fastapi>=0.110", "uvicorn>=0.29"]
 dev = ["pytest>=7.0", "pytest-cov>=4.0"]
 
 [project.urls]

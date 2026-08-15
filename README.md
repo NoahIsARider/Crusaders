@@ -117,6 +117,31 @@ Or grab a ready-made demo with the CLI:
 crusaders-demo
 ```
 
+## Visual Studio (GUI)
+
+A frosted-glass web studio for configuring and running frameworks without
+writing code — build task flows by drag & drop, compose handover policies,
+tune the organisation meta-knowledge, then run the simulation and read the
+evaluation report plus SECI feedback.
+
+| | |
+|---|---|
+| ![Studio main](gui/screenshots/studio-main.png) | ![Preset loaded](gui/screenshots/studio-preset-loaded.png) |
+| ![Simulation results](gui/screenshots/studio-results.png) | |
+
+*Top: the studio canvas. Middle: a built-in scenario loaded into the flow.
+Bottom: the evaluation report after a run.*
+
+```bash
+pip install fastapi uvicorn
+cd gui && npm install
+./start.sh            # backend on :8000, frontend on :5173 (proxies /api)
+```
+
+Open http://localhost:5173. Load a built-in scenario (triage, underwriting,
+code review) or assemble your own from the palette on the left; edit any
+object's properties in the right-hand inspector; hit **运行模拟** to evaluate.
+
 ## Design your own framework in 4 moves
 
 ### 1. Describe the work

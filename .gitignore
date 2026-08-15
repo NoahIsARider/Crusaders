@@ -19,3 +19,15 @@ crusaders_demo_report.json
 .vscode/
 .idea/
 .DS_Store
+
+# Frontend (gui)
+gui/node_modules/
+gui/dist/
+gui/package-lock.json
+gui/tsconfig.tsbuildinfo
+
+# Frontend (gui)
+gui/node_modules/
+gui/dist/
+gui/package-lock.json
+gui/tsconfig.tsbuildinfo

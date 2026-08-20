@@ -226,6 +226,19 @@ reports, then re-calibrate and watch the handover policy adapt.
 |---|---|
 | [`demos/smart_clinic/`](demos/smart_clinic/) | When does an AI front-desk diagnose on its own, and when does the doctor take over? A community clinic with an 11-patient roster, a 5-rule handover policy, a SECI learning loop and a 4-framework comparison. |
 
+**smart_clinic results** (11 patients, same roster & seed, 4 handover designs; full report in
+[`demos/smart_clinic/outputs/`](demos/smart_clinic/outputs/)):
+
+| framework | quality | safety | efficiency | handover_accuracy | ai_autonomy | decision_time (s) |
+|---|---|---|---|---|---|---|
+| **adaptive (this demo)** | **1.000** | **1.000** | 0.953 | **0.970** | 0.739 | 2.65 |
+| doctor-only | 1.000 | 0.520 | 0.968 | 0.333 | 0.000 | 5.77 |
+| ai-only | 0.923 | 0.826 | 1.000 | 0.897 | 1.000 | 1.43 |
+| generic policy stack | 1.000 | 0.711 | 0.956 | 0.712 | 0.379 | 4.20 |
+
+→ The adaptive framework matches doctor-only quality at AI-level efficiency, and roughly
+**doubles safety and handover accuracy** over both pure-human and pure-AI baselines.
+
 ```bash
 cd demos/smart_clinic
 python run_demo.py

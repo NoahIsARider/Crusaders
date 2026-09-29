@@ -273,6 +273,35 @@ The SECI engine reads both, distils lessons, and patches the meta-knowledge
 framework is moderated by what actually happened. See `docs/theory.md` for the
 details and the notation.
 
+## Formal model of the handover protocol
+
+The runtime measures whether a handover policy is good. [`formal/`](formal/README.md)
+proves what the protocol must never do. `formal/PowerHandover.tla` is a TLA⁺
+specification of dynamic power handover — every agent holds either *execution*
+authority or *authorisation* authority — and TLC model-checks three safety
+properties exhaustively:
+
+| property | meaning |
+| --- | --- |
+| `SeparationOfPowers` | no agent both executes and authorises |
+| `AuthorityBudget` | total delegated authority stays within a cap |
+| `HumanRetainsAuthorization` | at least one human keeps the grant role |
+
+The specification ships with three deliberately-relaxed configurations, each of
+which must produce a counterexample, so a clean run means something:
+
+```bash
+cd formal && ./run.sh      # needs java 11+
+```
+
+```
+safe protocol (all guards in place)
+  PASS  PowerHandover.cfg - no invariant violated
+  PASS  PowerHandoverBuggy_separation.cfg - SeparationOfPowers violated, as designed
+  PASS  PowerHandoverBuggy_human.cfg - HumanRetainsAuthorization violated, as designed
+  PASS  PowerHandoverBuggy_budget.cfg - AuthorityBudget violated, as designed
+```
+
 ## Development
 
 ```bash
